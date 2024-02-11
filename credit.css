@@ -1,4 +1,4 @@
-body {
+ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
@@ -86,10 +86,10 @@ input {
 
 /* CREDIT CARD IMAGE STYLING */
 .preload * {
-    --webkit-transition: none !important;
-    --moz-transition: none !important;
-    --ms-transition: none !important;
-    --o-transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 
 .container {
@@ -356,4 +356,11 @@ input {
 .creditcard.flipped {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+}
+
+  /* Added media query for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 }
